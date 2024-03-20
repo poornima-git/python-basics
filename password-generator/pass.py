@@ -12,14 +12,25 @@ print("Generate your Password")
 pass_letters = int(input("please enter how many letters you want in ur password:-"))
 pass_numbers = int(input("please enter how many numbers you want in ur password:-"))
 pass_symbols = int(input("please enter how many symbols you want in ur password:-"))
-password = ""
-for i in range(  pass_letters):
+password = []
+for i in range(pass_letters):
     sel = random.choice(letters)
     password += sel
-    for i in range( pass_numbers):
-        sel = random.choice(numbers)
-        password += sel
-print(password)
+for i in range( pass_numbers):
+    sel = random.choice(numbers)
+    password += sel
+for i in range( pass_symbols):
+    sel = random.choice(symbols)
+    password += sel
+
+random.shuffle(password)
+passwordc= ""
+for i in password:
+    passwordc += i
+print(passwordc)
+
+
+
    
     
     
