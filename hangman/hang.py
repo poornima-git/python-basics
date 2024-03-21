@@ -1,31 +1,29 @@
 import random
-name = input("what is ur name:")
-print("Hello" " " + name, "lets begin the game" )
-words = ["apple","mango", "orange"]
-turns = 6
-sel_words = random.choice(words)
-guesses = []
-for i in range(len(sel_words)):
-    guesses += "_"
-print(guesses)
-game_over = False
-while not game_over:
-    guessed_letter = input("guess a letter:\n").lower()
-    for position in range(len(sel_words)):
-        i = sel_words[position]
-        if i == guessed_letter:
-            guesses[position] = guessed_letter
-    print(guesses)
-if guessed_letter not in sel_words:
-    turns -= 1
-    if turns == 0:
-        game_over = True
-    print("you lose")
-    if "_" not in guesses:
-        game_over = "True"
-    print("you win")
-
-   
-
-
-    
+name = input ("what is ur name:\n")
+print("Hello" " " + name ,"let's begin")
+word = ["computer ", "mobile", "laptop"]
+choose = random.choice(word)
+print("guess the characters")
+guesses = " "
+turns = 5
+while turns > 0:
+    failed = 0
+    for char in choose:
+        if char in guesses:
+            print(char, end =" ")
+        else:
+            print("_")
+            failed += 1
+    if failed == 0:
+        print("you won")
+        print("the word is :", choose)
+        break
+    print()
+    guess = input("guess a letter")
+    guesses += guess
+    if guess not in choose:
+        turns -= 1
+        print("wrong")
+        print("you have", + turns, "more guesses")
+        if turns == 0:
+            print("you lose")
