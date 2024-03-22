@@ -5,7 +5,7 @@ word = ["computer ", "mobile", "laptop"]
 choose = random.choice(word)
 print("guess the characters")
 guesses = " "
-turns = 5
+turns = 10
 while turns > 0:
     failed = 0
     for char in choose:
@@ -19,7 +19,7 @@ while turns > 0:
         print("the word is :", choose)
         break
     print()
-    guess = input("guess a letter")
+    guess = input("guess a letter\n")
     guesses += guess
     if guess not in choose:
         turns -= 1
