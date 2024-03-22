@@ -12,14 +12,14 @@ while turns > 0:
         if char in guesses:
             print(char, end =" ")
         else:
-            print("_")
+            print("_", end=' ')
             failed += 1
     if failed == 0:
         print("you won")
         print("the word is :", choose)
         break
     print()
-    guess = input("guess a letter\n")
+    guess = input("guess a letter:")
     guesses += guess
     if guess not in choose:
         turns -= 1
