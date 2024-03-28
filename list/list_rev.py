@@ -59,15 +59,27 @@
 
 # num = 2
 # for i in range
-(11):
+# (11):
 #     res = i * 2
 #     print(num, "*", i ,"=" ,res)
 
-numbers = [12, 75, 150, 180, 145, 525, 50]
-for i in numbers:
-    if i > 150:
-        continue
-    elif i > 500:
-        break
-    elif i % 5 ==0:
-        print(i)
+# numbers = [12, 75, 150, 180, 145, 525, 50]
+# for i in numbers:
+#     if i > 150:
+#         continue
+#     elif i > 500:
+#         break
+#     elif i % 5 == 0:
+#         print(i)
+
+# reverse number pattern
+
+# rows = int(input("enter any number"))
+# for i in range(0,rows):
+#     for j in range(rows - i, 0, -1):
+#         print(j , end = " ")
+#     print()
+
+# list1 = [10, 20, 30, 40, 50]
+# list1.reverse()
+# print(list1)
