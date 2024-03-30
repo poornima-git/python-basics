@@ -47,13 +47,25 @@
 
 
 
-def sum_lists(my_lists):
-    sum = 0
-    for i in my_lists:
-        sum+=i
-    return sum
+# def sum_lists(my_lists):
+#     sum = 0
+#     for i in my_lists:
+#         sum+=i
+#     return sum
     
-print(sum_lists((1,2,3,4,5,7,8,9)))
+# print(sum_lists((1,2,3,4,5,7,8,9)))
      
 
-
+# usd_val = int(input("enter any number"))
+# def converter(usd_val):
+#     inr_val = usd_val * 83
+#     print(usd_val,'USD =', inr_val, 'INR ')
+# converter(usd_val)
+    
+# num = int(input('enter any number:-'))
+# def odd_even_number(num):
+#         if num % 2 == 0:
+#             print( num, "is even number")
+#         else:
+#             print(num,"is odd number")
+# odd_even_number(num)
