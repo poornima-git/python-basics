@@ -31,6 +31,29 @@
 # elif(b < 1000):
 #     print(b)
 # else:
-#     print("the sum is greater than 1000")
+#     print("the sum is greater than 1000") 
+
+
+
+# def max_num(a,b):
+#    if a > b:
+#       return a
+#    return b
+# print(max_num(4,5))
+# print(max_num(20,5))
+# print(max_num(56,90))
+# print(max_num(47,98))
+# print(max_num(49,65))
+
+
+
+def sum_lists(my_lists):
+    sum = 0
+    for i in my_lists:
+        sum+=i
+    return sum
+    
+print(sum_lists((1,2,3,4,5,7,8,9)))
+     
 
 
